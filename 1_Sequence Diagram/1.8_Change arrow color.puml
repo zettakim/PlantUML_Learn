@@ -1,0 +1,4 @@
+@startuml
+Bob -[#red]> Alice : hello
+Alice -[#blue]> Bob : ok
+@enduml

@@ -1,19 +1,21 @@
 @startuml
-autonumber 10 10 "<b>[000]"
+autonumber 1.1.1
 Bob -> Alice : Authentication Request
 Bob <- Alice : Authentication Response
 
-autonumber stop
-Bob -> Alice : dummy
+autonumber inc A
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
 
-autonumber resume "<font color=red><b>Message 0  "
-Bob -> Alice : Yet another authentication Request
-Bob <- Alice : Yet another authentication Response
+autonumber inc B
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
 
-autonumber stop
-Bob -> Alice : dummy
+autonumber inc A
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
 
-autonumber resume 1 "<font color=red><b>Message 0  "
-Bob -> Alice : Yet another authentication Request
-Bob <- Alice : Yet another authentication Response
+autonumber inc B
+Bob -> Alice : Authentication Request
+Bob <- Alice : Authentication Response
 @enduml
